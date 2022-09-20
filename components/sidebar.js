@@ -41,7 +41,7 @@ const SideBar = () => {
                   </span>
                 </div>
               </li>
-              <hr class="mx-5 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+              <hr className="mx-5 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
               <li>
                 <div className="flex items-center py-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></svg>
