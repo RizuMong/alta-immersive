@@ -1,3 +1,4 @@
+import TableUser from '../components/table_user'
 import React from "react";
 import Sidebar from "../components/sidebar";
 
@@ -8,7 +9,9 @@ const User = () => {
         <div>
           <Sidebar />
         </div>
-        <div className="mt-20 ml-8">user</div>
+        <div className="flex flex-row">
+          <TableUser />
+        </div>
       </div>
     </>
   );

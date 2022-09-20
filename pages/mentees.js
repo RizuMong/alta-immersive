@@ -1,11 +1,20 @@
-import React from "react";
+import React from 'react'
+import TableMentee from '../components/table_mentee'
+import Sidebar from "../components/sidebar";
 
 const MenteeList = () => {
   return (
     <>
-      <div>mentee</div>
+      <div className="flex flex-row">
+        <div>
+          <Sidebar />
+        </div>
+        <div>
+          <TableMentee />
+        </div>
+      </div>
     </>
-  );
-};
+  )
+}
 
-export default MenteeList;
+export default MenteeList
