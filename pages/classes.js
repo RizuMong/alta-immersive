@@ -1,9 +1,21 @@
-import React from 'react'
+import TableClass from '../components/table_class';
+import React from 'react';
+import Sidebar from "../components/sidebar";
 
-const Classes = () => {
+const ClassList = () => {
   return (
-    <div>classes</div>
+    <>
+      <div className="flex flex-row">
+        <div>
+          <Sidebar />
+        </div>
+        <div className="mt-20 ml-60">
+        <TableClass />
+        </div>
+      </div>
+    </>
+
   )
 }
 
-export default Classes
+export default ClassList
