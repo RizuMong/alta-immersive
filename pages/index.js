@@ -9,7 +9,7 @@ const Index = () => {
         <div className="grid-cols-4">
           <SideBar />
         </div>
-        <div className="ml-8 grid-cols-8">
+        <div className="ml-8 mt-6 grid-cols-8 ">
           <Header/>
         </div>
       </div>
