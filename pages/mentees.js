@@ -9,7 +9,7 @@ const MenteeList = () => {
         <div>
           <Sidebar />
         </div>
-        <div>
+        <div className="flex flex-row">
           <TableMentee />
         </div>
       </div>
