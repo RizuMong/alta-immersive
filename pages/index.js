@@ -6,10 +6,10 @@ const Index = () => {
   return (
     <>
       <div className="flex">
-        <div className="grid-cols-4">
+        <div className="">
           <SideBar />
         </div>
-        <div className="ml-8 mt-6 grid-cols-8 ">
+        <div className="ml-8 mt-9">
           <Header/>
         </div>
       </div>
