@@ -1,20 +1,12 @@
-import React from "react";
-import Header from "../components/header";
-import SideBar from "../components/sidebar";
+import React from 'react'
 
-const Index = () => {
+const Login = () => {
   return (
-    <>
-      <div className="flex">
-        <div className="">
-          <SideBar />
-        </div>
-        <div className="ml-8 mt-9">
-          <Header/>
-        </div>
-      </div>
-    </>
-  );
-};
+    <div>login
+      <p>Email</p>
+      <p>Password</p>
+    </div>
+  )
+}
 
-export default Index;
+export default Login
