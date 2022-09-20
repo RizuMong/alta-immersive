@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SideBar from "../components/sidebar";
 
 const Index = () => {
   return (
-    <div className="font-bold text-3xl text-center">index</div>
-  )
-}
+    <>
+      <SideBar />
+    </>
+  );
+};
 
-export default Index
+export default Index;
