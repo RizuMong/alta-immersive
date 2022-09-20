@@ -9,8 +9,8 @@ const User = () => {
         <div>
           <Sidebar />
         </div>
-        <div className="mt-20 ml-40">
-        <TableUser/>
+        <div className="flex flex-row">
+          <TableUser />
         </div>
       </div>
     </>

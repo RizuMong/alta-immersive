@@ -9,7 +9,7 @@ const MenteeList = () => {
         <div>
           <Sidebar />
         </div>
-        <div className="mt-20 ml-60">
+        <div>
           <TableMentee />
         </div>
       </div>
