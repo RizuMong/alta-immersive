@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import MenteeList from "../pages/mentees";
+import React from 'react';
 
 
 const TableMentee = () => {
