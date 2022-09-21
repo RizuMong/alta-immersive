@@ -8,7 +8,7 @@ const Header = () => {
         <div>
           <h3 className="font-semibold text-xl mt-1">Dashboard</h3>
         </div>
-        <div className="flex gap-6 ml-[580px]">
+        <div className="flex gap-6 ml-[500px]">
           <div class="relative">
             <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
               <svg
