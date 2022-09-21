@@ -1,8 +1,9 @@
 import React from 'react'
 import TableMentee from '../components/table_mentee'
-import Sidebar from "../components/sidebar";
+import Sidebar from "../components/sidebar"
 
 const MenteeList = () => {
+
   return (
     <>
       <div className="flex flex-row">
