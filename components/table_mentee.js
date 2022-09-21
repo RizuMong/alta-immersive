@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 
 const TableMentee = () => {
@@ -95,363 +95,360 @@ const TableMentee = () => {
                   </div>
                 </div>
               </div>
-
               <div clasNames="overflow-x-auto relative">
-                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                  <thead className="text-xs text-gray-700 uppercase bg-[#E6E6E6] border border-slate-300 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                      <th scope="col" className="py-3 px-6">
-                        Nomor
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Full Name
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Class
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Status
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Category
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Gender
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Edit
-                      </th>
-                      <th scope="col" className="py-3 px-6">
-                        Delete
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-                      <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                      </th>
-                      <td className="py-4 px-6">
-                        Bagas
-                      </td>
-                      <td className="py-4 px-6">
-                        BE 8
-                      </td>
-                      <td className="py-4 px-6">
-                        Academy
-                      </td>
-                      <td className="py-4 px-6">
-                        IT
-                      </td>
-                      <td className="py-4 px-6">
-                        Male
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                    </tr>
+                <thead className="text-xs text-gray-700 uppercase bg-[#E6E6E6] border border-slate-300 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" className="py-3 px-6">
+                      Nomor
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Full Name
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Class
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Status
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Category
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Gender
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Edit
+                    </th>
+                    <th scope="col" className="py-3 px-6">
+                      Delete
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      1
+                    </th>
+                    <td className="py-4 px-6">
+                      Bagas
+                    </td>
+                    <td className="py-4 px-6">
+                      BE 8
+                    </td>
+                    <td className="py-4 px-6">
+                      Academy
+                    </td>
+                    <td className="py-4 px-6">
+                      IT
+                    </td>
+                    <td className="py-4 px-6">
+                      Male
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
 
-                    <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-                      <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        2
-                      </th>
-                      <td className="py-4 px-6">
-                        Dhian
-                      </td>
-                      <td className="py-4 px-6">
-                        BE 7
-                      </td>
-                      <td className="py-4 px-6">
-                        People
-                      </td>
-                      <td className="py-4 px-6">
-                        Non-IT
-                      </td>
-                      <td className="py-4 px-6">
-                        Female
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                    </tr>
+                  <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      2
+                    </th>
+                    <td className="py-4 px-6">
+                      Dhian
+                    </td>
+                    <td className="py-4 px-6">
+                      BE 7
+                    </td>
+                    <td className="py-4 px-6">
+                      People
+                    </td>
+                    <td className="py-4 px-6">
+                      Non-IT
+                    </td>
+                    <td className="py-4 px-6">
+                      Female
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
 
-                    <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-                      <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        3
-                      </th>
-                      <td className="py-4 px-6">
-                        FE 8
-                      </td>
-                      <td className="py-4 px-6">
-                        QA 5
-                      </td>
-                      <td className="py-4 px-6">
-                        Placement
-                      </td>
-                      <td className="py-4 px-6">
-                        IT
-                      </td>
-                      <td className="py-4 px-6">
-                        Male
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-                      <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        4
-                      </th>
-                      <td className="py-4 px-6">
-                        Yoga
-                      </td>
-                      <td className="py-4 px-6">
-                        QA 4
-                      </td>
-                      <td className="py-4 px-6">
-                        Admision
-                      </td>
-                      <td className="py-4 px-6">
-                        Non-IT
-                      </td>
-                      <td className="py-4 px-6">
-                        Male
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-                      <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        5
-                      </th>
-                      <td className="py-4 px-6">
-                        Fatah
-                      </td>
-                      <td className="py-4 px-6">
-                        FE 7
-                      </td>
-                      <td className="py-4 px-6">
-                        Placement
-                      </td>
-                      <td className="py-4 px-6">
-                        IT
-                      </td>
-                      <td className="py-4 px-6">
-                        Male
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
-                      <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        6
-                      </th>
-                      <td className="py-4 px-6">
-                        Asri
-                      </td>
-                      <td className="py-4 px-6">
-                        FE 8
-                      </td>
-                      <td className="py-4 px-6">
-                        Academy
-                      </td>
-                      <td className="py-4 px-6">
-                        IT
-                      </td>
-                      <td className="py-4 px-6">
-                        Female
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                      <td className="py-4 px-6">
-                        <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
-                            </path>
-                          </svg>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      3
+                    </th>
+                    <td className="py-4 px-6">
+                      FE 8
+                    </td>
+                    <td className="py-4 px-6">
+                      QA 5
+                    </td>
+                    <td className="py-4 px-6">
+                      Placement
+                    </td>
+                    <td className="py-4 px-6">
+                      IT
+                    </td>
+                    <td className="py-4 px-6">
+                      Male
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      4
+                    </th>
+                    <td className="py-4 px-6">
+                      Yoga
+                    </td>
+                    <td className="py-4 px-6">
+                      QA 4
+                    </td>
+                    <td className="py-4 px-6">
+                      Admision
+                    </td>
+                    <td className="py-4 px-6">
+                      Non-IT
+                    </td>
+                    <td className="py-4 px-6">
+                      Male
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      5
+                    </th>
+                    <td className="py-4 px-6">
+                      Fatah
+                    </td>
+                    <td className="py-4 px-6">
+                      FE 7
+                    </td>
+                    <td className="py-4 px-6">
+                      Placement
+                    </td>
+                    <td className="py-4 px-6">
+                      IT
+                    </td>
+                    <td className="py-4 px-6">
+                      Male
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      6
+                    </th>
+                    <td className="py-4 px-6">
+                      Asri
+                    </td>
+                    <td className="py-4 px-6">
+                      FE 8
+                    </td>
+                    <td className="py-4 px-6">
+                      Academy
+                    </td>
+                    <td className="py-4 px-6">
+                      IT
+                    </td>
+                    <td className="py-4 px-6">
+                      Female
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                    <td className="py-4 px-6">
+                      <a href="#" className="font-medium text-black-600 dark:text-black-500 hover:underline">
+                        <svg
+                          className="w-6 h-6"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                          </path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
               </div>
 
               <div className="container text-right">
