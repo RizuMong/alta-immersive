@@ -10,7 +10,7 @@ const Login = () => {
           <div className="sm:flex">
             <div className="flex flex-col w-full p-4 sm:w-1/2 md:ml-5 lg:ml-16 sm:pt-44 lg:pr-44">
               <div className="text-center">
-                <h2 className="text-4xl font-semibold xs:text-left text-[#1B1B1B] mb-4 ">
+                <h2 className="text-4xl font-semibold xs:text-left text-[#1B1B1B] mb-5 ">
                   Hello Again!
                 </h2>
                 <p className="text-lg font-normal text-[#1B345F] mb-16">
