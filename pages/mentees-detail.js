@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 import Header from "../components/header";
-import MenteeProfile from "../components/mentee_profile";
+import MenteeProfile from '../components/mentee_profile';
 import SideBar from "../components/sidebar";
 
 const MenteeDetails = () => {
