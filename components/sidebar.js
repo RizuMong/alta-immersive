@@ -16,7 +16,7 @@ const SideBar = () => {
           <div className="overflow-y-auto py-4 px-4 h-screen bg-[#1B1B1B]">
             <div className="flex items-center pl-2 mt-4 mb-5">
               <div>
-                <Link href="/">
+                <Link href="/dashboard">
                   <Img src={Logo} alt="" />
                 </Link>
               </div>
@@ -28,7 +28,7 @@ const SideBar = () => {
                   <svg className="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></svg>
                   <RiDashboardLine className="text-xl" />
                   <span className="ml-3">
-                    <Link href="/"> Dashboard</Link>
+                    <Link href="/dashboard"> Dashboard</Link>
                   </span>
                 </div>
               </li>
@@ -41,7 +41,7 @@ const SideBar = () => {
                   </span>
                 </div>
               </li>
-              <hr class="mx-5 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+              <hr className="mx-5 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
               <li>
                 <div className="flex items-center py-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></svg>
@@ -62,7 +62,7 @@ const SideBar = () => {
               </li>
               <li>
                 <button>
-                  <div className="mt-96 flex items-center py-2 text-base font-normal text-gray-900 rounded-lg dark:text-white">
+                  <div className="mt-72 flex items-center py-2 text-base font-normal text-gray-900 rounded-lg dark:text-white">
                     <svg className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></svg>
                     <CgLogOut className="text-xl" />
                     <span className="flex-1 ml-3">Logout</span>
