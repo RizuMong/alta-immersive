@@ -16,7 +16,7 @@ const MenteeDetails = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MenteeDetails
+export default MenteeDetails;

@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.1",
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.1.11",
     "next": "12.3.0",
     "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "tw-elements": "^1.0.0-alpha12"
     "recharts": "^2.1.14",
     "swr": "^1.3.0"
   },
