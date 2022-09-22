@@ -16,8 +16,6 @@ const User = () => {
           onHide={() => setModalShow(false)}
           onShow={() => setModalShow(true)}
           />
-
-
         </div>
       </div>
     </>
