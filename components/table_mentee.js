@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/header";
-import sidebar from "../components/sidebar";
+import Sidebar from "../components/Sidebar";
 import { PencilSquareIcon, TrashIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
-import { Col, Dropdown, Row } from "react-bootstrap";
 // import Cookies from "js-cookie";
 
 export default function mentees() {
@@ -62,58 +61,57 @@ export default function mentees() {
   return (
     <>
       <div className="flex h-screen bg-[#F8F8F8] ">
-        <sidebar />
         <div className="flex flex-col flex-1 w-full">
           <Header />
           <main className="h-full pb-16 overflow-y-auto">
             <div className="container grid px-6 py-10 mx-auto">
               <label className="block mt-4 text-sm mb-4">
                 <div className=" text-gray-500 focus-within:text-purple-600 flex justify-end">
-                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black ml-5 bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Class<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                  <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black ml-5 bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Class<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                  <div id="dropdown" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                    <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                       <li>
-                        <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Front-End Batch 7</a>
+                        <a href="#/action-1" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Front-End Batch 7</a>
                       </li>
                       <li>
-                        <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 9</a>
+                        <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 9</a>
                       </li>
                       <li>
-                        <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 10</a>
+                        <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 10</a>
                       </li>
                       <li>
-                        <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 4</a>
+                        <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 4</a>
                       </li>
                       <li>
-                        <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 5</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black ml-5 mr-5 bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Status<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                  <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-                      <li>
-                        <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Academy</a>
-                      </li>
-                      <li>
-                        <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">People</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Placement</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Admision</a>
+                        <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 5</a>
                       </li>
                     </ul>
                   </div>
-                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black mr-7  bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Category<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                  <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" className="text-black ml-5 mr-5 bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Status<svg className="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                  <div id="dropdown" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                    <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                       <li>
-                        <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informatics</a>
+                        <a href="#/action-1" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Academy</a>
                       </li>
                       <li>
-                        <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Non-Informatics</a>
+                        <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">People</a>
+                      </li>
+                      <li>
+                        <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Placement</a>
+                      </li>
+                      <li>
+                        <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Admision</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" className="text-black mr-7  bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Category<svg className="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                  <div id="dropdown" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                    <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                      <li>
+                        <a href="#/action-1" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informatics</a>
+                      </li>
+                      <li>
+                        <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Non-Informatics</a>
                       </li>
                     </ul>
                   </div>
@@ -197,9 +195,9 @@ export default function mentees() {
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
+                                <path strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
                                   d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
                                 </path>
                               </svg>
@@ -213,9 +211,9 @@ export default function mentees() {
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                <path strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
                                 </path>
                               </svg>
                             </a>
@@ -250,9 +248,9 @@ export default function mentees() {
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
                                   d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
                                 </path>
                               </svg>
@@ -267,9 +265,9 @@ export default function mentees() {
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
                                   d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
                                 </path>
                               </svg>
@@ -315,51 +313,51 @@ export default function mentees() {
                     // onChange={(e) => setFullName(e.target.value)}
                     />
                     <label className="mt-5">Class</label>
-                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Front-End Bacth 8 <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Front-End Bacth 8 <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
-                    <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                    <div id="dropdown" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                      <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                         <li>
-                          <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Front-End Batch 7</a>
+                          <a href="#/action-1" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Front-End Batch 7</a>
                         </li>
                         <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 9</a>
+                          <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 9</a>
                         </li>
                         <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 10</a>
+                          <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Back-End Batch 10</a>
                         </li>
                         <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 4</a>
+                          <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 4</a>
                         </li>
                         <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 5</a>
+                          <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qualyty Asurance Batch 5</a>
                         </li>
                       </ul>
                     </div>
                     <label className="mt-5">Category</label>
-                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}> Informatics <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}> Informatics <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
-                    <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                    <div id="dropdown" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                      <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                         <li>
-                          <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informatics</a>
+                          <a href="#/action-1" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Informatics</a>
                         </li>
                         <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Non-Informatics</a>
+                          <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Non-Informatics</a>
                         </li>
                       </ul>
                     </div>
 
                     <label className="mt-5">Gender</label>
-                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Male<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-purple-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Male<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
-                    <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                    <div id="dropdown" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                      <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                         <li>
-                          <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Male</a>
+                          <a href="#/action-1" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Male</a>
                         </li>
                         <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Female</a>
+                          <a href="#/action-2" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Female</a>
                         </li>
                       </ul>
                     </div>
@@ -372,7 +370,7 @@ export default function mentees() {
                     type="button"
                     onClick={() => setShowModal(false)}>Cancel
                   </button>
-                  <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
+                  <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
                     <button data-modal-toggle="bottom-right-modal" type="button" className="text-black bg-[#266663] rounded-lg border border-gray-300 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none hover:outline-purple-500 rounded mr-3 mb-1 ease-linear transition-all duration-150" onClick={(e) => handleAddNewUser(e)}>Save Changes</button>
                   </div>
                 </div>
