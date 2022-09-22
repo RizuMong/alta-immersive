@@ -67,10 +67,10 @@ export default function Users() {
             <div className="container grid px-6 py-10 mx-auto">
               <Header />
               <label className="block mt-4 text-sm mb-4">
-                <div className=" text-gray-500 focus-within:text-purple-600 flex justify-end">
+                <div className=" text-gray-500 flex justify-end">
                   <button
                     type="button"
-                    className=" block px-6 text-sm py-2 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-none rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                    className=" block px-6 text-sm py-2 font-medium leading-5 text-white transition-colors duration-150 bg-[#266663] border border-none rounded-md active:bg-[#276562] hover:bg-[#368581] focus:outline-none focus:shadow-outline-purple"
                     onClick={() => setShowModal(true)}
                   >
                     Add New
@@ -120,11 +120,11 @@ export default function Users() {
                   </table>
                 </div>
               </div>
-              <div className="text-gray-500 focus-within:text-purple-600 flex justify-end mt-6 gap-4">
-                <button className="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-none rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+              <div className="text-gray-500 flex justify-end mt-6 gap-4">
+                <button className="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-[#266663] border border-none rounded-md active:bg-[#276562] hover:bg-[#368581] focus:outline-none focus:shadow-outline-purple">
                   Previous
                 </button>
-                <button className="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-none rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                <button className="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-[#266663] border border-none rounded-md active:bg-[#276562] hover:bg-[#368581] focus:outline-none focus:shadow-outline-purple">
                   Next
                 </button>
               </div>
