@@ -95,7 +95,7 @@ const TableMentee = () => {
                   </div>
                 </div>
               </div>
-              <div clasNames="overflow-x-auto relative">
+              <div className="overflow-x-auto relative">
                 <thead className="text-xs text-gray-700 uppercase bg-[#E6E6E6] border border-slate-300 dark:bg-gray-700 dark:text-gray-400">
                   <tr>
                     <th scope="col" className="py-3 px-6">
