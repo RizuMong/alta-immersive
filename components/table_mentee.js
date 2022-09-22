@@ -170,7 +170,7 @@ export default function mentees() {
                     </thead>
                     <tbody className=" divide-y divide-gray-700 bg-gray-800">
                       <>
-                        <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-[#E6E6E6] dark:bg-gray-800 dark:border-gray-700">
                           <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             1
                           </th>
@@ -222,7 +222,7 @@ export default function mentees() {
                           </td>
                         </tr>
 
-                        <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-[#E6E6E6] dark:bg-gray-800 dark:border-gray-700">
                           <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             2
                           </th>
@@ -277,7 +277,7 @@ export default function mentees() {
                           </td>
                         </tr>
 
-                        <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-[#E6E6E6] dark:bg-gray-800 dark:border-gray-700">
                           <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             3
                           </th>
@@ -331,7 +331,7 @@ export default function mentees() {
                             </a>
                           </td>
                         </tr>
-                        <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-[#E6E6E6] dark:bg-gray-800 dark:border-gray-700">
                           <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             4
                           </th>
@@ -385,7 +385,7 @@ export default function mentees() {
                             </a>
                           </td>
                         </tr>
-                        <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-[#E6E6E6] dark:bg-gray-800 dark:border-gray-700">
                           <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             5
                           </th>
@@ -439,7 +439,7 @@ export default function mentees() {
                             </a>
                           </td>
                         </tr>
-                        <tr className="bg-white border border-slate-300 dark:bg-gray-800 dark:border-gray-700">
+                        <tr className="bg-white border-[#E6E6E6] dark:bg-gray-800 dark:border-gray-700">
                           <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             6
                           </th>
