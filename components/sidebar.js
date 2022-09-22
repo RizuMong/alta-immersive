@@ -12,8 +12,8 @@ const SideBar = () => {
   return (
     <>
       <div>
-        <aside className="w-64" aria-label="Sidebar">
-          <div className="overflow-y-auto py-4 px-4 h-screen bg-[#1B1B1B]">
+        <aside className="w-64 h-full" aria-label="Sidebar">
+          <div className="overflow-y-auto py-4 px-4 h-full bg-[#1B1B1B]">
             <div className="flex items-center pl-2 mt-4 mb-5">
               <div>
                 <Link href="/dashboard">

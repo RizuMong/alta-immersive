@@ -35,8 +35,7 @@ const Dashboard = () => {
             <h2 className="pt-6 pl-8 font-semibold text-xl text-[#1B1B1B]">
               Statistik Mentee
             </h2>
-          </div>
-          
+          </div>         
         </div>
       </div>
     </>
