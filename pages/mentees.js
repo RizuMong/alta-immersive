@@ -3,7 +3,7 @@ import TableMentee from '../components/table_mentee'
 import Sidebar from "../components/sidebar"
 
 const MenteeList = () => {
-
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
       <div className="flex flex-row">
@@ -11,11 +11,17 @@ const MenteeList = () => {
           <Sidebar />
         </div>
         <div className="flex flex-row">
-          <TableMentee />
+          <TableMentee
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+          onShow={() => setModalShow(true)}
+          />
+
+
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default MenteeList
