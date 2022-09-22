@@ -6,8 +6,8 @@ const AddMentee = () => {
   return (
     <>
       <div className="flex">
-        <div className="">
-          <SideBar className="" />
+        <div>
+          <SideBar/>
         </div>
         <div className="ml-8 mt-9">
           <Header />
