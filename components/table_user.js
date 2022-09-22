@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/header";
-import Sidebar from "../components/Sidebar";
 import { PencilSquareIcon, TrashIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
-import axios from "axios";
-// import Cookies from "js-cookie";
 
 export default function Users() {
   // const [users, setUsers] = useState([]);

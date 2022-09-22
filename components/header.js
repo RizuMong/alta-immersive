@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "next/image";
+import Profile from "../images/profile.png"
 
 const Header = () => {
   return (
@@ -33,16 +34,16 @@ const Header = () => {
               placeholder="Search..."
             />
           </div>
-          <div className="flex mt-1.5">
+          <div className="flex mt-1">
             <div>
               <Img
                 className="bg-gray-400 rounded-2xl"
-                width={30}
-                height={30}
-                src=""
+                width={32}
+                height={32}
+                src={Profile}
               />
             </div>
-            <div className="ml-3 mt-0.5">
+            <div className="ml-3 mt-1">
               <p>Hai, Jhen Chang</p>
             </div>
           </div>
