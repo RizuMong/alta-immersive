@@ -3,7 +3,6 @@ import Header from "../components/header";
 import Sidebar from "../components/Sidebar";
 import { PencilSquareIcon, TrashIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
-import { Col, Dropdown, Row } from "react-bootstrap";
 // import Cookies from "js-cookie";
 
 export default function Users() {
