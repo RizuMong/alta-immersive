@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Immersive Dashboard App Project
 
-## Getting Started
+### Link Deployment: 
 
-First, run the development server:
+Latar Belakang
+Immersive Dashboard merupakan sebuah aplikasi manajemen data students Immersive di
+Alterra Academy . Sebagai seorang Software Engineer tugas kamu adalah mengembangkan
+aplikasi Immersive Dashboard App tersebut.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Kamu dapat mengembangkan aplikasi dengan memulai dari fitur - fitur yang prioritas dulu.
+Berikut fitur prioritas untuk memenuhi kriteria MVP ( Minimum Viable Product ):
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- User dapat melakukan login , update data .
+- Superadmin ( Manager ) dapat menambahkan user lain ( seperti mentor , tim placement ,
+tim people skill ) , update data , dan delete user .
+- User dapat melihat list semua user yang telah terdaftar .
+- User dapat create class , edit , delete , dan melihat list class .
+- User dapat menambahkan data mentee ( students ) , melihat list mentee , mengedit data
+mentee , melakukan filter list mentee berdasarkan class , category ( IT dan Non IT ) , dan
+status ( Interview , Join Class , Unit 1 , Unit 2 , Unit 3 , Repeat Unit 1 , Repeat Unit 2 , Repeat
+Unit 3 , Placement , Eliminated , Graduated ) .
+- User dapat mengedit / merubah status mentee .
+- User dapat menambahkan feedback / log untuk mentee .
+Wireframe dan User Flow
+https://whimsical.com/group-project-3-Dc81 LaGV2Lpb4AP4Gk9vLtImmersive Dashboard App Project
+Latar Belakang
+Immersive Dashboard merupakan sebuah aplikasi manajemen data students Immersive di
+Alterra Academy . Sebagai seorang Software Engineer tugas kamu adalah mengembangkan
+aplikasi Immersive Dashboard App tersebut .
+Kamu dapat mengembangkan aplikasi dengan memulai dari fitur - fitur yang prioritas dulu .
+Berikut fitur prioritas untuk memenuhi kriteria MVP ( Minimum Viable Product ) :
+- User dapat melakukan login , update data .
+- Superadmin ( Manager ) dapat menambahkan user lain ( seperti mentor , tim placement ,
+tim people skill ) , update data , dan delete user .
+- User dapat melihat list semua user yang telah terdaftar .
+- User dapat create class , edit , delete , dan melihat list class .
+- User dapat menambahkan data mentee ( students ) , melihat list mentee , mengedit data
+mentee , melakukan filter list mentee berdasarkan class , category ( IT dan Non IT ) , dan
+status ( Interview , Join Class , Unit 1 , Unit 2 , Unit 3 , Repeat Unit 1 , Repeat Unit 2 , Repeat
+Unit 3 , Placement , Eliminated , Graduated ) .
+- User dapat mengedit / merubah status mentee .
+- User dapat menambahkan feedback / log untuk mentee .
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Isi dalam Codingan:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Wireframe dan User Flow
+https://whimsical.com/group-project-3-Dc81LaGV2Lpb4AP4Gk9vLt
