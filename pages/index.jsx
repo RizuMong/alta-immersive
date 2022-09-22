@@ -25,10 +25,8 @@ const Login = () => {
       .then((response) => {
         setCookie("Cookie Token",response.data.data)
         router.push("/dashboard");
-        console.log(response);
       })
       .catch((error) => {
-        console.log(error);
         alert(error.message);
       });
   };
