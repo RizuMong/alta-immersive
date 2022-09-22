@@ -1,8 +1,36 @@
 import React from "react";
+import { useState } from "react";
 import Img from "next/image";
 import Banner from "../images/img-banner.jpg";
+import { useRouter } from "next/router";
+import axios from "axios";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+
+  const handleLogin = async () => {
+    setEmail("");
+    setPassword("");
+    await axios({
+      url: "https://altaproject.online/login",
+      method: "POST",
+      data: {
+        email,
+        password,
+      },
+    })
+      .then((response) => {
+        router.push("/dashboard");
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+        alert(error.message);
+      });
+  };
+
   return (
     <>
       <div className="p-20 bg-[#FAFAFA]">
@@ -22,9 +50,10 @@ const Login = () => {
                 <label className="text-lg font-medium mb-3">Your email</label>
                 <input
                   className="w-full h-14 border-2 border-[#F0F4FD] rounded-md pl-3 mb-6"
-                  type="email"
-                  // onChange={handleEmail}
                   placeholder="Email adress"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <label className="text-lg font-medium mb-3">Password</label>
@@ -32,7 +61,8 @@ const Login = () => {
                   className="w-full h-14 border-2 border-[#F0F4FD] rounded-md pl-3 mb-4"
                   placeholder="Password"
                   type="password"
-                  // onChange={handlePassword}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
 
                 <p className="text-base text-[#266663] text-right mb-10">
@@ -42,7 +72,7 @@ const Login = () => {
 
               <button
                 className="text-lg font-medium text-white w-full bg-[#266663] h-14 rounded-md mt-5"
-                // onClick={() => handleLogin()}
+                onClick={handleLogin}
               >
                 Sign In
               </button>
