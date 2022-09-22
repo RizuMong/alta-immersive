@@ -4,6 +4,7 @@ import Img from "next/image";
 import Banner from "../images/img-banner.jpg";
 import { useRouter } from "next/router";
 import axios from "axios";
+import { setCookie } from 'cookies-next';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -22,6 +23,7 @@ const Login = () => {
       },
     })
       .then((response) => {
+        setCookie("Cookie Token",response.data.data)
         router.push("/dashboard");
         console.log(response);
       })
