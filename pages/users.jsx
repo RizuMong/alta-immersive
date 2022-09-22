@@ -8,12 +8,10 @@ import axios from "axios";
 export default function Users() {
   const [users, setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  // const [fullName, setFullName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [team, setTeam] = useState("");
-  // const [role, setRole] = useState("");
-  // const [status, setStatus] = useState("");
-  // const [password, setPassword] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [role, setRole] = useState("");
 
   const getUsers = () => {
     axios
@@ -30,34 +28,32 @@ export default function Users() {
     getUsers();
   }, []);
 
-  // const handleAddNewUser = (e) => {
-  //   e.preventDefault();
-  //   setFullName("");
-  //   setEmail("");
-  //   setTeam("");
-  //   setRole("");
-  //   setStatus("");
-  //   setPassword("");
-  //   axios
-  //     .post("https://tugas.website/admin", {
-  //       headers: { Authorization: "Bearer " + Cookies.get("token") },
-  //       data: {
-  //         fullname: fullName,
-  //         email: email,
-  //         team: team,
-  //         status: status,
-  //         role: role,
-  //         password: password,
-  //       },
-  //     })
-  //     .then((response) => {
-  //       console.log(response);
-  //       setShowModal(false);
-  //     })
-  //     .catch((err) => {
-  //       alert(err.message);
-  //     });
-  // };
+  const handleAddNewUser = (e) => {
+    e.preventDefault();
+    setFullName("");
+    setEmail("");
+    setRole("");
+    setPassword("");
+    setId("");
+    axios
+      .post("https://altaproject.online/users", {
+        headers: { Authorization: "Bearer " },
+        data: {
+          full_name: fullName,
+          email: email,
+          password: password,
+          role: role,
+          id_team: id,
+        },
+      })
+      .then((response) => {
+        console.log(response);
+        setShowModal(false);
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
+  };
   return (
     <>
       <div className="flex h-screen ">
@@ -137,9 +133,9 @@ export default function Users() {
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gray-50  outline-none focus:outline-none">
+              <div className="border-0 rounded-lg shadow-lg px-8 relative flex flex-col w-full bg-gray-50  outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-100 rounded-t">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded">
                   <h3 className="text-xl text-[#303030] font-semibold">Add New User</h3>
                 </div>
                 {/*body*/}
@@ -148,55 +144,53 @@ export default function Users() {
                     <label>Full Name</label>
                     <input
                       className="col px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
-                      // value={fullName}
-                      // onChange={(e) => setFullName(e.target.value)}
+                      value={fullName}
+                      placeholder="Enter your name"
+                      onChange={(e) => setFullName(e.target.value)}
                     />
                     <label>Email</label>
                     <input
                       className=" w-full px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
-                      // value={email}
-                      // onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      placeholder="Enter your email"
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <label>Team</label>
+                    {/* <label>Team</label>
                     <input
                       className=" w-full px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
                       // value={team}
+                      placeholder="Academy..."
                       // onChange={(e) => setTeam(e.target.value)}
-                    />
+                    /> */}
                     <label>Role</label>
                     <input
                       className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
-                      // value={role}
-                      // onChange={(e) => setRole(e.target.value)}
-                    />
-                    <label>Status</label>
-                    <input
-                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
-                      placeholder="Hai"
-                      // value={status}
-                      // onChange={(e) => setStatus(e.target.value)}
+                      placeholder="Admin"
+                      value={role}
+                      onChange={(e) => setRole(e.target.value)}
                     />
                     <label>Password</label>
                     <input
                       className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
-                      // value={password}
-                      // onChange={(e) => setPassword(e.target.value)}
+                      value={password}
+                      placeholder="Password"
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                   </form>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
                   <button
-                    className="text-black background-transparent font-semibold uppercase px-6 py-2 text-sm outline-none focus:outline-none rounded mr-3 mb-1 ease-linear transition-all duration-150"
+                    className="text-black background-transparent border font-semibold px-6 py-2 text-base outline-none focus:outline-none rounded mr-3 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
                     Close
                   </button>
                   <button
-                    className="bg-purple-600 text-white active:bg-purple-700 font-semibold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="bg-[#266663] text-white active:bg-green-700 font-semibold text-base px-6 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    // onClick={(e) => handleAddNewUser(e)}
+                    onClick={(e) => handleAddNewUser(e)}
                   >
                     Create User
                   </button>
