@@ -77,37 +77,37 @@ export default function Users() {
                   </button>
                 </div>
               </label>
-              <div className="w-full overflow-hidden rounded-lg shadow-xs">
+              <div className="w-full overflow-hidden rounded shadow-xs">
                 <div className="w-full overflow-x-auto">
                   <table className="w-full whitespace-no-wrap">
                     <thead>
-                      <tr className="text-xs font-semibold tracking-wide text-left uppercase border-b border-gray-700 text-gray-400 bg-gray-800">
-                        <th className="px-4 py-3 text-center">Fullname</th>
-                        <th className="px-4 py-3 text-center">Email</th>
-                        <th className="px-4 py-3 text-center">Team</th>
-                        <th className="px-4 py-3 text-center">Role</th>
-                        <th className="px-4 py-3 text-center">Status</th>
+                      <tr className="text-xs font-semibold tracking-wide text-left uppercase border-b border-gray-100 text-[#303030] bg-gray-200">
+                        <th className="px-4 py-3">Fullname</th>
+                        <th className="px-4 py-3">Email</th>
+                        <th className="px-4 py-3">Team</th>
+                        <th className="px-4 py-3">Role</th>
+                        <th className="px-4 py-3">Status</th>
                       </tr>
                     </thead>
-                    <tbody className=" divide-y divide-gray-700 bg-gray-800">
+                    <tbody className=" divide-y divide-gray-200 bg-gray-50">
                       {users.map((user) => {
                         return (
                           <>
-                            <tr className="text-gray-400" key={user.id}>
-                              <td className="px-4 py-3 text-center">
+                            <tr className="text-[#1B1B1B] " key={user.id}>
+                              <td className="px-4 py-3">
                                 <div className="flex items-center text-sm">
                                   <p className="font-semibold">{user.full_name}</p>
                                 </div>
                               </td>
-                              <td className="px-4 py-3 text-center text-sm">{user.email}</td>
-                              <td className="px-4 py-3 text-center text-sm">{[user.team.name]}</td>
-                              <td className="px-4 py-3 text-center text-sm">{user.role}</td>
-                              <td className="px-4 py-3 text-center">
-                                <div className="flex items-center justify-center space-x-4 text-sm">
-                                  <button className="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5  rounded-lg text-gray-400 focus:outline-none focus:shadow-outline-gray" aria-label="Edit">
+                              <td className="px-4 py-3 text-sm">{user.email}</td>
+                              <td className="px-4 py-3 text-sm">{[user.team.name]}</td>
+                              <td className="px-4 py-3 text-sm">{user.role}</td>
+                              <td className="px-4 py-3">
+                                <div className="flex items-center space-x-4 text-sm">
+                                  <button className="flex items justify-between px-2 py-2 text-sm font-medium leading-5  rounded-lg text-gray-400 focus:outline-none focus:shadow-outline-gray" aria-label="Edit">
                                     <PencilSquareIcon className="w-5 h-5" />
                                   </button>
-                                  <button className="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5  rounded-lg text-gray-400 focus:outline-none focus:shadow-outline-gray" aria-label="Delete">
+                                  <button className="flex items justify-between px-2 py-2 text-sm font-medium leading-5  rounded-lg text-red-400 focus:outline-none focus:shadow-outline-gray" aria-label="Delete">
                                     <TrashIcon className="w-5 h-5" />
                                   </button>
                                 </div>
@@ -137,63 +137,64 @@ export default function Users() {
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gray-800 outline-none focus:outline-none">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gray-50  outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-700 rounded-t">
-                  <h3 className="text-3xl text-gray-400 font-semibold">Add New User</h3>
+                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-100 rounded-t">
+                  <h3 className="text-xl text-[#303030] font-semibold">Add New User</h3>
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <form className="flex flex-col text-gray-400 gap-2">
                     <label>Full Name</label>
                     <input
-                      className="col  px-4 py-2 rounded-lg text-sm border border-gray-600 bg-gray-700 focus:border-purple-400  focus:outline-none  text-gray-300 focus:shadow-outline-gray"
+                      className="col px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
                       // value={fullName}
                       // onChange={(e) => setFullName(e.target.value)}
                     />
                     <label>Email</label>
                     <input
-                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-600 bg-gray-700 focus:border-purple-400  focus:outline-none  text-gray-300 focus:shadow-outline-gray"
+                      className=" w-full px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
                       // value={email}
                       // onChange={(e) => setEmail(e.target.value)}
                     />
                     <label>Team</label>
                     <input
-                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-600 bg-gray-700 focus:border-purple-400  focus:outline-none  text-gray-300 focus:shadow-outline-gray"
+                      className=" w-full px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
                       // value={team}
                       // onChange={(e) => setTeam(e.target.value)}
                     />
                     <label>Role</label>
                     <input
-                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-600 bg-gray-700 focus:border-purple-400  focus:outline-none  text-gray-300 focus:shadow-outline-gray"
+                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
                       // value={role}
                       // onChange={(e) => setRole(e.target.value)}
                     />
                     <label>Status</label>
                     <input
-                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-600 bg-gray-700 focus:border-purple-400  focus:outline-none  text-gray-300 focus:shadow-outline-gray"
+                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
+                      placeholder="Hai"
                       // value={status}
                       // onChange={(e) => setStatus(e.target.value)}
                     />
                     <label>Password</label>
                     <input
-                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-600 bg-gray-700 focus:border-purple-400  focus:outline-none  text-gray-300 focus:shadow-outline-gray"
+                      className=" w-full  px-4 py-2 rounded-lg text-sm border border-gray-400 bg-gray-50 focus:border-green-800  focus:outline-none  text-gray-600 focus:shadow-outline-gray"
                       // value={password}
                       // onChange={(e) => setPassword(e.target.value)}
                     />
                   </form>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-gray-700 rounded-b">
+                <div className="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
                   <button
-                    className="text-white background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none hover:outline-purple-500 rounded mr-3 mb-1 ease-linear transition-all duration-150"
+                    className="text-black background-transparent font-semibold uppercase px-6 py-2 text-sm outline-none focus:outline-none rounded mr-3 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
                     Close
                   </button>
                   <button
-                    className="bg-purple-600 text-white active:bg-purple-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="bg-purple-600 text-white active:bg-purple-700 font-semibold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     // onClick={(e) => handleAddNewUser(e)}
                   >
