@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/header";
-import SideBar from "../components/sidebar";
+import Sidebar from "../components/sidebar";
 
 const Dashboard = () => {
   return (
     <>
       <div className="flex">
         <div className="">
-          <SideBar />
+          <Sidebar />
         </div>
         <div className="ml-8 mt-9">
           <Header />

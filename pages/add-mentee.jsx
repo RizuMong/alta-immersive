@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/header";
-import SideBar from "../components/sideBar";
+import Sidebar from "../components/sideBar";
 
 const AddMentee = () => {
   return (
     <>
       <div className="flex">
         <div>
-          <SideBar />
+          <Sidebar />
         </div>
         <div className="ml-8 mt-9">
           <Header />

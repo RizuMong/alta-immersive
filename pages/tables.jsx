@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/header";
-import SideBar from "../components/sideBar";
+import Sidebar from "../components/sidebar";
 import { PencilSquareIcon, TrashIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 // import Cookies from "js-cookie";
@@ -61,7 +61,7 @@ export default function Users() {
   return (
     <>
       <div className="flex h-screen ">
-        <SideBar />
+        <Sidebar />
         <div className="flex flex-col flex-1 w-full">
           <main className="h-full pb-16 overflow-y-auto">
             <div className="container grid px-6 py-10 mx-auto">
