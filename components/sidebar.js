@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Img from "next/image";
+import { useRouter } from "next/router";
 import Logo from "../images/logo-altacamp.svg";
 import { RiDashboardLine } from "react-icons/ri";
 import { BsPeople } from "react-icons/bs";
@@ -9,6 +10,12 @@ import { MdOutlineClass } from "react-icons/md";
 import { CgLogOut } from "react-icons/cg";
 
 const SideBar = () => {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    router.push(`/`);
+  };
+
   return (
     <>
       <div>
@@ -61,7 +68,7 @@ const SideBar = () => {
                 </div>
               </li>
               <li>
-                <button>
+                <button onClick={() => handleLogout()}>
                   <div className="mt-72 flex items-center py-2 text-base font-normal text-gray-900 rounded-lg dark:text-white">
                     <svg className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></svg>
                     <CgLogOut className="text-xl" />
