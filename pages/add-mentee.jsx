@@ -58,8 +58,8 @@ const AddMentee = () => {
                       <label className="mr-6 ml-1 font-medium">Male</label>
                       <input
                         type="radio"
-                        name="payment"
-                        value="Debit Card"
+                        name="type"
+                        // value=""
                         // onClick={(value) => handleMentee(value)}
                       />
                       <label className="mr-6 ml-1 font-medium">Female</label>
@@ -124,17 +124,17 @@ const AddMentee = () => {
                     <div className="xl:text-lg ml-6 mt-1">
                       <input
                         type="radio"
-                        name="payment"
+                        name="type"
                         // onClick={(value) => handleMentee(value)}
-                        // value="Credit Card"
+                        // value=""
                       />
                       <label className="mr-6 ml-1 font-medium">
                         Informatics
                       </label>
                       <input
                         type="radio"
-                        name="payment"
-                        value="Debit Card"
+                        name="type"
+                        // value=""
                         // onClick={(value) => handleMentee(value)}
                       />
                       <label className="mr-6 ml-1 font-medium">
