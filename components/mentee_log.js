@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import { IoIosAdd } from "react-icons/io";
 
 export default function MenteeLog({ label, img, ...rest }) {
+  const [showStatus, setShowStatus] = useState(false);
+  const handleClick = () => {
+    setShowStatus(!showStatus);
+  };
+
   const [feedback, setFeedback] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const status = ["Active", "Placement", "Eliminate"];
 
   const onSubmit = () => {
     console.log('feedback: ', feedback)
   }
-  const onClick = () => {
-    console.log(dropdownNavbar)
-  }
+
   return (
     <>
       <div className="input-wrapper">
@@ -57,19 +61,29 @@ export default function MenteeLog({ label, img, ...rest }) {
                 <div className="relative p-6 flex-auto">
                   <form className="flex flex-col text-black-400 gap-2">
                     <label className="mt-5">Status</label>
-                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white-700 hover:bg-[#E6E6E6] border border-gray-600 bg-white-700 focus:border-gray-400 focus:ring-4 focus:outline-none focus:ring-[#E6E6E6] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-[#E6E6E6] dark:hover:bg-[#E6E6E6] dark:focus:ring-blue-800" type="button" onClick={() => setShowModal(false)}>Active <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-
-                    <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-                        <li>
-                          <a href="#/action-1" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Active</a>
-                        </li>
-                        <li>
-                          <a href="#/action-2" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Non-Active</a>
-                        </li>
-                      </ul>
+                    <div className="relative inline-block text-left">
+                      <div>
+                        <button onClick={handleClick} type="button" className="inline-flex justify-center rounded-md border border-gray-300 bg-white px-4 py-2 w-800 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                          Active
+                          <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                      {showStatus && (
+                        <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                          <div className="py-1" role="none">
+                            {status &&
+                              status.map((status) => (
+                                <a className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-0">
+                                  {status}</a>
+                              ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
-
+                  </form>
+                  <form className="flex flex-col text-black-400 gap-2 ">
                     <label>Upload File</label>
                     <div className="upload">
                       {img && <img className="preview" src={img} alt="preview" />}
