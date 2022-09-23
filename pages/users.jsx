@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";
-import { PencilSquareIcon, TrashIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
+import { PencilSquareIcon, TrashIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 // import Cookies from "js-cookie";
 
